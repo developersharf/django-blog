@@ -5,3 +5,7 @@ from django.http import HttpResponse
 def home(request):
     return HttpResponse("Welcome to the Home Page!")
     # return render(request, 'home.html')
+    
+    
+def post_list(request):
+    return render(request, 'core/post_list.html', {})
